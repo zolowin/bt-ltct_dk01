@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoa hồng</title>
+</head>
+<body>
+    <script>
+        // quy định mức hoa hồng :
+        // nếu doanh thu dưới 10 triệu : không nhận được hoa hồng;
+        // nếu doanh thu trên 10 triệu: hoa hồng nhận được bằng 5% doanh thu;
+        // nếu doanh thu trên 30 triệu: hoa hồng nhận được bằng 7% doanh thu;
+        // nếu doanh thu trên 50 triệu : hoa hồng nhận được bằng 10% doanh thu;
+    let dt=parseFloat(prompt('Nhập doanh thu: '));
+    if (dt<10){
+        alert('Không nhận được hoa hồng');
+    
+    }else if(dt<30){
+        let hh=dt*5/100;
+        alert('số tiền hoa hồng là: ' + hh);
+
+    }else if(dt<50){
+        let hh=dt*7/100;
+        alert('số tiền hoa hồng là : ' + hh );
+    }else{
+        let hh=dt*10/100;
+        alert('số tiền hoa hồng là : '+ hh);
+    }
+    </script>
+</body>
+</html>
